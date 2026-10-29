@@ -63,7 +63,7 @@
 - [x] Criar CI/CD e testes integrados
 - [x] Criar evidência de execução
 - [x] Revisar README para recrutadores
-- [ ] Publicar no GitHub
+- [x] Publicar no GitHub
 - [ ] Fixar ou destacar no perfil
 
 ## Critério de conclusão
