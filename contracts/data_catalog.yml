@@ -1,0 +1,26 @@
+version: 1
+assets:
+  - name: crm_customers
+    owner: customer-platform
+    classification: confidential
+    pii: [full_name, email, phone]
+    primary_key: crm_customer_id
+  - name: orders
+    owner: commerce
+    classification: internal
+    primary_key: order_id
+  - name: payments
+    owner: finance
+    classification: confidential
+    pii: [payment_customer_ref]
+    primary_key: payment_id
+  - name: behavior_events
+    owner: digital-analytics
+    classification: confidential
+    pii: [customer_ref, anonymous_id]
+    primary_key: event_id
+  - name: support_tickets
+    owner: customer-care
+    classification: confidential
+    pii: [support_customer_ref]
+    primary_key: ticket_id

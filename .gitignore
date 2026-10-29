@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+logs/
+data/generated/
+storage/
+*.parquet
+.coverage
+target/
+dbt_packages/

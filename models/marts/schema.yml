@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: customer_360
+    description: Visão governada e não sensível do cliente.
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: lifetime_value
+        tests: [not_null]
+      - name: marketing_consent
+        tests: [not_null]

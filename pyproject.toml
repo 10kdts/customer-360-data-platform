@@ -1,0 +1,13 @@
+[project]
+name = "customer-360-data-platform"
+version = "0.1.0"
+description = "Modern data platform demonstrando batch, streaming, qualidade e governança"
+requires-python = ">=3.10"
+
+[project.scripts]
+c360-generate = "src.customer360.generate:main"
+c360-pipeline = "src.customer360.pipeline:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

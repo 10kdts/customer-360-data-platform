@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/contracts/behavior-event/1.0.0",
+  "title": "BehaviorEventV1",
+  "type": "object",
+  "required": ["event_id", "schema_version", "event_name", "event_time", "ingested_at", "anonymous_id", "session_id", "properties"],
+  "properties": {
+    "event_id": {"type": "string", "format": "uuid"},
+    "schema_version": {"const": "1.0.0"},
+    "event_name": {"enum": ["page_view", "product_view", "add_to_cart", "checkout_start", "purchase"]},
+    "event_time": {"type": "string", "format": "date-time"},
+    "ingested_at": {"type": "string", "format": "date-time"},
+    "anonymous_id": {"type": "string", "format": "uuid"},
+    "customer_ref": {"type": ["string", "null"]},
+    "session_id": {"type": "string", "format": "uuid"},
+    "properties": {"type": "object"}
+  },
+  "additionalProperties": false
+}

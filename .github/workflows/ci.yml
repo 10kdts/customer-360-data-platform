@@ -1,0 +1,32 @@
+name: CI
+on:
+  push: {branches: [main]}
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - name: Install
+        run: pip install -e .
+      - name: Generate deterministic sources
+        run: python -m src.customer360.generate
+      - name: Execute local medallion pipeline
+        run: python -m src.customer360.pipeline
+      - name: Unit and contract tests
+        run: python -m unittest discover -s tests -v
+      - name: Compile
+        run: python -m compileall -q src orchestration tests
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: customer360-evidence
+          path: |
+            data/sample/manifest.json
+            storage/run_report.json

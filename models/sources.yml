@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: silver
+    schema: silver
+    loaded_at_field: ingested_at
+    freshness:
+      warn_after: {count: 6, period: hour}
+      error_after: {count: 24, period: hour}
+    tables:
+      - name: customers
+      - name: orders
+      - name: payments
+      - name: support_tickets
+      - name: behavior_events

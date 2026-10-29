@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "row_counts": {
+    "crm_customers.csv": 100,
+    "orders.csv": 400,
+    "order_items.csv": 1047,
+    "payments.csv": 400,
+    "support_tickets.csv": 80,
+    "behavior_events.jsonl": 1539
+  },
+  "controlled_issues": [
+    "invalid_email",
+    "negative_order_amount",
+    "orphan_payment",
+    "invalid_satisfaction",
+    "duplicate_event"
+  ]
+}
