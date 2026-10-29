@@ -64,7 +64,7 @@
 - [x] Criar evidência de execução
 - [x] Revisar README para recrutadores
 - [x] Publicar no GitHub
-- [ ] Fixar ou destacar no perfil
+- [x] Fixar ou destacar no perfil
 
 ## Critério de conclusão
 

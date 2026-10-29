@@ -74,7 +74,7 @@ APIs + PostgreSQL + eventos JSON
 | 5 | Transformações dbt e Customer 360 | Concluída |
 | 6 | Orquestração, qualidade e observabilidade | Concluída |
 | 7 | Governança, segurança e LGPD | Concluída |
-| 8 | CI/CD, demonstração e publicação | Publicado; destaque pendente |
+| 8 | CI/CD, demonstração e publicação | Concluída |
 
 ## Princípios
 
