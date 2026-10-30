@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Projeto de portfólio orientado a Engenharia, Arquitetura e Especialista de Dados.
+Montei este projeto para explorar um problema que aparece em muitas empresas: cada sistema conhece uma parte do cliente, mas ninguém enxerga a jornada inteira. A solução reúne essas fontes, trata conflitos de identidade e entrega uma visão Customer 360 rastreável.
 
 ## Objetivo
 
@@ -52,7 +52,7 @@ APIs + PostgreSQL + eventos JSON
 - Docker Compose e GitHub Actions
 - Prometheus/Grafana ou métricas estruturadas para observabilidade
 
-## Diferenciais demonstrados
+## O que eu quis resolver além do caminho feliz
 
 - Arquitetura batch e streaming
 - Medallion architecture: Bronze, Silver e Gold
